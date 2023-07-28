@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" window-frame="solid-with-shadow">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Parcel Preact Typescript</title>
+  <title>CeleMod</title>
 </head>
 
 <body>
+  <div class="dummy"></div>
+  <div role=window-caption>
+    CeleMod
+  </div>
+  <span class="ctrl">
+    <button role=window-minimize>
+      <icon|minus />
+    </button>
+    <button class="close" role=window-close>
+      <icon|cancel />
+    </button>
+  </span>
+
   <div id="root"></div>
   <link rel="stylesheet" href="./index.scss">
   <script>
-
+    Window.this.isResizable = false;
     const urlToStyleElementMap = new Map();
     setTimeout(() => {
       const linkElements = document.querySelectorAll('link[rel="stylesheet"]');
