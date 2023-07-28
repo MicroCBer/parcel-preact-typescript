@@ -1,0 +1,16 @@
+$bg: #131313;
+$bg1: #222222;
+$bg2: #333333;
+$bg3: #444444;
+$fg: rgb(255, 255, 255);
+
+$primary: #8b0000;
+
+html{
+    background: $bg;
+    color: $fg;
+}
+
+*{
+    font-family: 'Noto Sans SC', 'Noto Sans', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', sans-serif;
+}

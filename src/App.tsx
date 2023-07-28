@@ -1,5 +1,15 @@
-import { h } from "preact";
+import { Fragment, h } from "preact";
+import { Button } from "./components/all"
 
-const App = () => <h1>Hello world</h1>;
+export default () => {
+    return (
+        <Fragment>
+            <h1>Buttons</h1>
+            <Button large={true} type={"primary"}>Large Primary Button</Button>
+            <Button large={true}>Large Button</Button>
+            <Button>Normal Button</Button>
+            <Button type={"primary"}>Primary Button</Button>
 
-export default App;
+        </Fragment>
+    );
+}
